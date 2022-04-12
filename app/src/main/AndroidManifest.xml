@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uiapplication">
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UIAPPLICATION">
+        <activity
+            android:name=".Svaghi"
+            android:exported="false" />
+        <activity
+            android:name=".Diario"
+            android:exported="false" />
+        <activity
+            android:name=".Amici_Affetti"
+            android:exported="false" />
+        <activity
+            android:name=".Salute_Benessere"
+            android:exported="false" />
+        <activity
+            android:name=".Device_Synchronize"
+            android:theme="@style/Theme.UIAPPLICATION.NoActionBar"></activity>
+        <activity
+            android:name=".WatchConfiguration"
+            android:theme="@style/Theme.UIAPPLICATION.NoActionBar"></activity>
+        <activity
+            android:name=".Device_Configuration"
+            android:theme="@style/Theme.UIAPPLICATION.NoActionBar"></activity>
+        <activity
+            android:name=".UpdateActivity"
+            android:theme="@style/Theme.UIAPPLICATION.NoActionBar"></activity>
+        <activity
+            android:name=".Configured_Devices"
+            android:theme="@style/Theme.UIAPPLICATION.NoActionBar"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.UIAPPLICATION.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Device_Fragment"
+            android:theme="@style/Theme.UIAPPLICATION.NoActionBar"></activity>
+    </application>
+
+</manifest>
